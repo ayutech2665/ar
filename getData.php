@@ -15,7 +15,6 @@ $url = $_GET["url"];
 echo $url;
 #save the html from the url as a variable
 $htmlResult = open_url($url);
-echo $htmlResult; 
 #get the desired text from between two strings
 $parsed = get_string_between($htmlResult, 'title="Search" value="', '"');
 #echo the parsed result as html to the page
